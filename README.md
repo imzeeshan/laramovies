@@ -1,4 +1,4 @@
-**LaraMovies** - A simple Movies dashboard with Laravel and [tabler.io]()
+**LaraMovies** - A simple Movies dashboard with Laravel and [http://tabler.io]()
 
 <u>**Database Schema**</u> 
 
