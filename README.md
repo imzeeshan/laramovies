@@ -2,7 +2,7 @@
 
 <u>**Database Schema**</u> 
 
-![](/Library/WebServer/Documents/laramovies/laramovies-schema.png)
+![](laramovies-schema.png)
 
 
 
