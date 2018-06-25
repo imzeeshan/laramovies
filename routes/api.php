@@ -13,6 +13,9 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['prefix' => '/'], function () {
+    Route::resource('users', 'API\UserController');
+    Route::resource('movies', 'API\MoviesController');
 });
+
+
