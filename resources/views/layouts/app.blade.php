@@ -115,8 +115,8 @@
                                 <li class="nav-item dropdown">
                                     <a href="javascript:void(0)" class="nav-link {{ request()->is('movies') ? 'active' : ''}}" data-toggle="dropdown"><i class="fe fe-calendar"></i> Movies</a>
                                     <div class="dropdown-menu dropdown-menu-arrow">
-                                    <a href="#" class="dropdown-item ">All Movies</a>
-                                    <a href="#" class="dropdown-item ">Create a new Movie</a>
+                                    <a href="{{ route('movies.index')}}" class="dropdown-item ">All Movies</a>
+                                    <a href="{{ route('movies.create')}}" class="dropdown-item ">Create a new Movie</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -125,7 +125,7 @@
                                     <a href="#" class="dropdown-item active">All Reviews</a>                                  
                                     </div>
                                 </li>
-                                *
+                                
                             </ul>
                         </div>
                     </div>
@@ -144,5 +144,10 @@
             @yield('content')
         </main>
     </div>
+
+  
+     @yield('custom_scripts')
+    
+
 </body>
 </html>
